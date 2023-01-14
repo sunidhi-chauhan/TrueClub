@@ -55,6 +55,74 @@ public class TrueClub {
 		super();
 		
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "TrueClub [id=" + id + ", name=" + name + ", address=" + address + ", pincode=" + pincode + ", state="
+				+ state + "]";
+	}
+
+
+
+	public Integer getId() {
+		return id;
+	}
+
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+
+	public Integer getPincode() {
+		return pincode;
+	}
+
+
+
+	public void setPincode(Integer pincode) {
+		this.pincode = pincode;
+	}
+
+
+
+	public String getState() {
+		return state;
+	}
+
+
+
+	public void setState(String state) {
+		this.state = state;
+	}
 	
 	
 	
