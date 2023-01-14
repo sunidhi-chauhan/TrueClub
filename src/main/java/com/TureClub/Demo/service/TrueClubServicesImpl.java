@@ -11,7 +11,7 @@ import com.TureClub.Demo.exception.MemberException;
 import com.TureClub.Demo.repositery.TrueClubDao;
 
 @Service
-public abstract class TrueClubServicesImpl implements TrueClubServices {
+public  class TrueClubServicesImpl implements TrueClubServices {
 	
 	
 	//Reference variables touch to my data Access Layer
