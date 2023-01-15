@@ -93,7 +93,10 @@ public  class TrueClubServicesImpl implements TrueClubServices {
 	public TrueClub deleteMemberById(Integer id) throws MemberException {
 		
 		//You can also use Optional.
+		
+		
 		TrueClub existingMember = dao.findById(id).orElseThrow(() -> new MemberException("Member does't exist with id"+id));
+		dao.delete(existingMember);
 		
 		return existingMember;
 	}

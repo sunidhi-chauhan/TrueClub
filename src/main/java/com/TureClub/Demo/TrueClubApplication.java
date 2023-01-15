@@ -8,6 +8,8 @@ public class TrueClubApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TrueClubApplication.class, args);
+		
+		System.out.println("Started...");
 	}
 
 }

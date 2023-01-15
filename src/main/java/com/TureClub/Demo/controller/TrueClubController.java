@@ -32,7 +32,7 @@ public class TrueClubController {
 	//1. method Signature-> ResponsEntity
 	
 	@PostMapping("/regMember")
-	public  ResponseEntity<TrueClub> registerStudentHandler(TrueClub trueClub) {
+	public  ResponseEntity<TrueClub> registerStudentHandler(@RequestBody  TrueClub trueClub) {
 		
 		
 		
@@ -90,6 +90,7 @@ public class TrueClubController {
 		
 		TrueClub deleteMember = services.deleteMemberById(id);
 		
+		
 		return new ResponseEntity<TrueClub>(deleteMember, HttpStatus.OK);
 		
 	}
@@ -98,7 +99,7 @@ public class TrueClubController {
 	
 	//5. Get all TrueClub Member Record
 	
-	
+	@GetMapping("/getRecord")
 	public ResponseEntity<List<TrueClub>>getAllDetailsHandler()throws MemberException{
 		
 		List<TrueClub> trueClubs = services.getAllMemberRecord();
